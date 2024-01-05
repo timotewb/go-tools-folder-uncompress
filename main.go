@@ -102,6 +102,10 @@ func main() {
 			}
 		}
 	}
+	zenity.Info("Folders uncompressed!",
+		zenity.Title("Complete"),
+		zenity.InfoIcon,
+	)
 }
 
 func unzipFile(f *zip.File, destination string) (int64, error) {
